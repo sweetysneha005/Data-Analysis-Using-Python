@@ -1,0 +1,11 @@
+#To write a Python program using the Pandas module to convert a Pandas Series into a native Python 
+list and display its type. 
+Program: 
+import pandas as pd 
+data = pd.Series([10, 20, 30, 40, 50]) 
+print("Pandas Series:") 
+print(data) 
+py_list = data.tolist() 
+print("\nConverted to Python list:") 
+print(py_list) 
+print("\nType of the converted object:",type(py_list))
