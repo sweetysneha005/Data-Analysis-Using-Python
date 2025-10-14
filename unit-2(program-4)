@@ -1,0 +1,9 @@
+# Demonstrates error handling using the try-except block to 
+program:
+handle division by zero.
+
+try:
+    num=5
+    b=num/0
+except:
+    print("cant divvided by zero") 
