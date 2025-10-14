@@ -1,0 +1,11 @@
+#To extract all numbers from a given array which are less and greater than a 
+specified number. 
+Program: 
+import numpy as np 
+arr = np.array([5, 12, 7, 20, 3, 15, 8]) 
+threshold = 10 
+less_than = arr[arr < threshold] 
+greater_than = arr[arr > threshold] 
+print("Original Array:", arr) 
+print("Values less than", threshold, ":", less_than) 
+print("Values greater than", threshold, ":", greater_than) 
