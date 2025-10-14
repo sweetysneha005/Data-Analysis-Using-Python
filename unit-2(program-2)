@@ -1,0 +1,26 @@
+# Demonstrates inheritance by creating a base class Animal 
+and derived classes like Dog, Cat, etc., each with their specific behaviors.
+program:
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print(f"{self.name} makes a sound.")
+    def move(self):
+        print(f"{self.name} makes a sound.")
+class Dog(Animal):
+    def speak(self):
+        print(f"{self.name} says: boww bowww!")
+class Cat(Animal):
+    def speak(self):
+        print(f"{self.name} says: Meow meow pilli milk boy tho pelli!")
+class Bird(Animal):
+    def speak(self):
+        print(f"{self.name} says: keech keech!")
+dog = Dog("dog")
+cat = Cat("cat")
+bird = Bird("bird")
+dog.speak()
+cat.speak()
+bird.speak()
