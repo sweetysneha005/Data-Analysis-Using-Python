@@ -1,0 +1,4 @@
+# Split a string into array of characters 
+my_string = "AIML3"  
+char_list = list(my_string)  
+print(char_list)  
