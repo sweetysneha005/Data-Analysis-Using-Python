@@ -1,0 +1,8 @@
+#To get the largest number from a list
+
+number =[10,90,30,70]
+largest =max(number)
+smallest =min(number)
+
+print("largest number",largest)
+print("smallest number",smallest)
