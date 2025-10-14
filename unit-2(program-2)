@@ -1,0 +1,36 @@
+# Car class definition
+
+program:
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.is_running = False
+
+    def start(self):
+        if not self.is_running:
+            self.is_running = True
+            print(f"The {self.year} {self.make} {self.model} has started.")
+        else:
+            print(f"The {self.make} {self.model} is already running.")
+
+    def stop(self):
+        if self.is_running:
+            self.is_running = False
+            print(f"The {self.year} {self.make} {self.model} has stopped.")
+        else:
+            print(f"The {self.make} {self.model} is already stopped.")
+
+# Create Car objects
+car1 = Car("Toyota", "Fortuner", 2022)
+car2 = Car("Honda", "Civic", 2021)
+car3 = Car("mercedes","Benzz",2020)
+
+# Test methods
+car1.start()
+car1.stop()
+car2.start()
+car2.stop()
+car3.start()
+car3.stop()
