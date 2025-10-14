@@ -1,0 +1,12 @@
+#To test whether none of the elements of a given array is zero. 
+program:
+def no_zero_elements(arr): 
+    for element in arr: 
+        if element == 0: 
+            return False 
+    return True 
+array = list(map(int, input("Enter array elements separated by space: ").split())) 
+if no_zero_elements(array): 
+    print("✅ All elements are non-zero.") 
+else: 
+    print("❌ At least one element is zero.") 
