@@ -1,0 +1,16 @@
+#To create an element-wise comparison (greater, greater_equal, less and less_equal, 
+equal, equal within a tolerance) of two given arrays.
+program:
+import numpy as np 
+array1 = np.array([10, 20, 30, 40, 50]) 
+array2 = np.array([15, 20, 25, 40, 60])
+print("Array 1:", array1) 
+print("Array 2:", array2) 
+print("\nElement-wise Comparisons:") 
+print("Greater:         ", np.greater(array1, array2)) 
+print("Greater Equal:   ", np.greater_equal(array1, array2)) 
+print("Less:            ", np.less(array1, array2)) 
+print("Less Equal:      ", np.less_equal(array1, array2)) 
+print("Equal:           ", np.equal(array1, array2)) 
+tolerance = 5 
+print("\nEqual within tolerance (±{}):".format(tolerance), np.allclose(array1, array2, atol=tolerance)) 
