@@ -1,0 +1,8 @@
+#To write a Python program using the Pandas module to create and display a one-dimensional array
+like object (Series) containing an array of data. 
+Program: 
+import pandas as pd 
+data = [10, 20, 30, 40, 50] 
+series = pd.Series(data) 
+print("Pandas Series:") 
+print(series)
